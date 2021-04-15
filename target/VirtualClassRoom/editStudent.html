@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Student</title>
+	<link rel="stylesheet" href = "./css/regStyle.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src = "./js/regMain.js"></script>
+</head>
+<body>
+
+	<div id = "mainForm">
+	<form name="regForm" onsubmit="checkValidations()" action = "edit?entity=student" method = "post">
+		<p> id :<br>
+		<input type="text" name="id"/>
+		</p>
+		<p> New Name :<br>
+		<input type="text" name="name"/>
+		</p>
+		<p> New Username :<br>
+		<input type="text" name="userName"/>
+		</p>
+		<div id = "passwordCheckBox">
+		<p> New Password :<br>
+		<input type="Password" name="password" id = "password" onkeyup="checkPasswordStrength()"/>
+		</p>
+		</div>
+		<div id = "passwordStrengthStatus"></div>
+		<p> Confirm Password :<br>
+		<input type="Password" name="confirmPassword"/>
+		</p>
+		<p> New Age :
+		<input type="text" name="age"/>
+		</p>
+		
+		<p> New Email Id :
+		<input type="email" name="email"/>
+		</p>
+		<label for = "address">New Address:</label>
+		<textarea name="address" rows="5" cols="70" >
+		</textarea>
+		<p> New City :
+		<input type="text" name="city"/>
+		</p>
+		<p> New Pincode :
+		<input type="text" name="pincode"/>
+		</p>
+		<p> New State :
+		<input type="text" name="state"/>
+		</p>
+		<p> New Country :
+		<input type="text" name="country"/>
+		</p>
+  		<br><br><br>
+  		<input type="submit" value="Submit Form">
+  		<br><br>
+  		<input type="reset" value="Reset Form"><br><br>
+  		<input type="button" value="Click to get back!!" onclick = "history.back()">
+	</form>
+	</div>
+
+</body>
+</html>

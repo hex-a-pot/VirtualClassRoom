@@ -1,0 +1,6 @@
+projectKey=com.mindtree:VirtualClassRoom
+serverUrl=http://localhost:8081
+serverVersion=8.8.0.42792
+dashboardUrl=http://localhost:8081/dashboard?id=com.mindtree%3AVirtualClassRoom
+ceTaskId=AXjUB9smFgDI9NcGc5pM
+ceTaskUrl=http://localhost:8081/api/ce/task?id=AXjUB9smFgDI9NcGc5pM

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Marks</title>
+	<link rel="stylesheet" href = "./css/regStyle.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div id = "mainForm">
+	<form name="regForm" onsubmit="checkValidations()" action = "insert?entity=marks" method = "post">
+		<p> Id of Student :<br>
+		<input type="text" name="id"/>
+		</p>
+		<p> Physics Marks :<br>
+		<input type="text" name="physics"/>
+		</p>
+		<p> Chemistry Marks :
+		<input type="text" name="chemistry"/>
+		</p>
+		
+		<p> Mathematics Marks :
+		<input type="text" name="maths"/>
+		</p>
+		<p> Computer Science Marks :
+		<input type="text" name="cs"/>
+		</p>
+		<p> English Marks :
+		<input type="text" name="english"/>
+		</p>
+  		<br><br><br>
+  		<input type="submit" value="Submit Form">
+  		<br><br>
+  		<input type="reset" value="Reset Form"><br><br>
+  		<input type="button" value="Click to get back!!" onclick = "history.back()">
+	</form>
+	</div>
+
+</body>
+</html>

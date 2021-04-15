@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Student</title>
+	<link rel="stylesheet" href = "./css/regStyle.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id = "mainForm">
+	<form name="regForm" onsubmit="checkValidations()" action = "delete?entity=student" method = "post">
+		<p> Student Id :<br>
+		<input type="text" name="id"/>
+		</p>
+  		<br><br><br>
+  		<input type="submit" value="Submit Form">
+  		<br><br>
+  		<input type="reset" value="Delete Student"><br><br>
+  		<input type="button" value="Click to get back!!" onclick = "history.back()">
+	</form>
+	</div>
+
+</body>
+</html>
